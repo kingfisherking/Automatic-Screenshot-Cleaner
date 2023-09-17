@@ -4,7 +4,7 @@ import os
 import shutil
 #accessing user's desktop, this currently assumes the program is deployed in a folder on the desktop
 CWD = os.getcwd()
-desktopPath = CWD[0:CWD.find("Desktop")+8] #+8 for the length of 'Desktop/' to include in the path
+desktopPath = CWD[0:CWD.find("Desktop")]+'Desktop/' #+7 for the length of 'Desktop/' to include in the path
 
 # searching desktop for folder labeled "Screenshots", creating one if it doesn't exist
 #this variable essentially names the folder, change the word "Screenshots" to what you want
